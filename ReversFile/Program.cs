@@ -13,7 +13,9 @@ namespace ReversFile
             while (!completeExecution) 
             { 
                 Console.WriteLine("Enter path to file \n Example: test.txt ");
-                string enteredPath = Console.ReadLine();
+                string enteredPath = string.Empty;
+                while (enteredPath== string.Empty)
+                    enteredPath = Console.ReadLine();
                 string dataIn = string.Empty;
            
                 try
